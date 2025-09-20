@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Clicker for Send Button",
+  "version": "1.1",
+  "description": "Automatically clicks the Send button every 12-18 seconds. Now with a STOP button!",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Auto Clicker"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],  // Replace with your domain if needed
+      "js": ["content.js"]
+    }
+  ]
+}
